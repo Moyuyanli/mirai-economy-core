@@ -22,6 +22,7 @@ mavenCentralPublish {
 }
 
 repositories {
+    maven("https://nexus.chahuyun.cn/repository/maven-public/")
     mavenCentral()
 }
 
@@ -29,7 +30,7 @@ dependencies {
     compileOnly("xyz.cssxsh.mirai:mirai-script-plugin:1.1.0")
     compileOnly("xyz.cssxsh.mirai:mirai-hibernate-plugin:2.9.0")
 
-    implementation("cn.chahuyun:hibernate-plus:2.1.0")
+    implementation("cn.chahuyun:hibernate-plus:2.1.1")
 
     testImplementation(kotlin("test"))
     testImplementation("xyz.cssxsh.mirai:mirai-hibernate-plugin:2.9.0")

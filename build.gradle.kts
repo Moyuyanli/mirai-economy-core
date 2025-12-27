@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "xyz.cssxsh.mirai"
-version = "1.1.0"
+version = "1.1.1"
 
 mavenCentralPublish {
     useCentralS01()
@@ -28,6 +28,9 @@ repositories {
 dependencies {
     compileOnly("xyz.cssxsh.mirai:mirai-script-plugin:1.1.0")
     compileOnly("xyz.cssxsh.mirai:mirai-hibernate-plugin:2.9.0")
+
+    implementation("cn.chahuyun:hibernate-plus:2.1.0")
+
     testImplementation(kotlin("test"))
     testImplementation("xyz.cssxsh.mirai:mirai-hibernate-plugin:2.9.0")
     testImplementation("org.luaj:luaj-jse:3.0.1")

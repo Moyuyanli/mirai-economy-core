@@ -17,7 +17,7 @@ internal object MiraiEconomyCorePlugin : KotlinPlugin(
         author("cssxsh")
 
         dependsOn("xyz.cssxsh.mirai.plugin.mirai-script-plugin", true)
-        dependsOn("xyz.cssxsh.mirai.plugin.mirai-hibernate-plugin", false)
+        dependsOn("xyz.cssxsh.mirai.plugin.mirai-hibernate-plugin", true)
     }
 ) {
 

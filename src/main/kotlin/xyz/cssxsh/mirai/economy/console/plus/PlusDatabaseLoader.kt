@@ -33,6 +33,7 @@ public object PlusDatabaseLoader {
 
             DUCKDB -> configuration.address = folder.resolve("economy.duckdb").toString()
         }
+        configuration.driveType = dataType
 
         HibernatePlusService.loadingService(configuration)
     }
